@@ -1,0 +1,33 @@
+<!--Currency Conversion using js-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="conversion.css">
+    <title>Currency Conversion</title>
+</head>
+<body>
+    <div class = "head">
+        <h1>Currency Conversion</h1>
+        <form>
+            <label for="rupees">Rupees</label>
+            <input type="text" id="rupees" name="rupees" placeholder="Rupees"><br>
+            <label for="dollars">Dollars</label>
+            <input type="text" id="dollars" name="dollars" placeholder="Dollars"><br>
+            <input type="button" id="convert" value="Convert">
+        </form>
+        <script>
+            var rupees = document.getElementById("rupees");
+            var dollars = document.getElementById("dollars");
+            var convert = document.getElementById("convert");
+            convert.onclick = function(){
+                if(rupees.value != ""){
+                    dollars.value = rupees.value * 0.014;
+                }
+                else if(dollars.value != ""){
+                    rupees.value = dollars.value * 71.45;
+                }
+            }
+        </script>
+    </div>
+</html>

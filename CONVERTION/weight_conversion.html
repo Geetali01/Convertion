@@ -1,0 +1,35 @@
+<!--weight Conversion using js-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="conversion.css">
+    <title>Weight Conversion</title>
+</head>
+<body>
+    <div class = "head">
+        <h1>Weight Conversion</h1>
+        <div class="clickable">
+        <form>
+            <label for="kilograms">Kilograms</label>
+            <input type="text" id="kilograms" name="kilograms" placeholder="Kilograms"><br>
+            <label for="pounds">Pounds</label>
+            <input type="text" id="pounds" name="pounds" placeholder="Pounds"><br>
+            <input type="button" id="convert" value="Convert">
+        </form>
+        </div>
+        <script>
+            var kilograms = document.getElementById("kilograms");
+            var pounds = document.getElementById("pounds");
+            var convert = document.getElementById("convert");
+            convert.onclick = function(){
+                if(kilograms.value != ""){
+                    pounds.value = kilograms.value * 2.205;
+                }
+                else if(pounds.value != ""){
+                    kilograms.value = pounds.value * 0.454;
+                }
+            }
+        </script>
+    </div>
+</html>

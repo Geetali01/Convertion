@@ -1,0 +1,65 @@
+/* conversion css*/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Handjet&family=Oswald&display=swap');
+body {
+    background-color: #fffefe;
+    transition: background-color 0.3s ease-in-out;
+}
+body:hover {
+    background-color: #000000;
+}
+.head {
+  background-color: rgba(500, 500, 500, 0.771);
+  font-family: "Lato", sans-serif;
+  align-content: center;
+  text-align: center;   
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  padding: 150px 150px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 10%;
+}
+h1 {
+    font-family: Oswald;
+    font-size: 50px;
+}
+li {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+li:hover {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-style: italic;
+}
+label {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+input {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+}
+button {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+}
+#convert {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+}
+#reset {
+    font-family: HandJet;
+    color: rgb(0, 0, 0);
+}
